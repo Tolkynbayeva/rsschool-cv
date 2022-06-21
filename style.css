@@ -65,6 +65,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .container {
@@ -111,7 +112,7 @@ a:hover {
 .section-profile {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 1px solid #3C3368;
 }
@@ -125,6 +126,7 @@ a:hover {
 
 .profile-description {
     align-self: center;
+    width: 50%;
 }
 
 .profile-profession {
@@ -152,13 +154,17 @@ a:hover {
     letter-spacing: 5px;
 }
 
+.courses-list {
+    width: 90%;
+}
+
 .section-education {
     width: 100%;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
 }
 

@@ -1,1 +1,1 @@
-# [rsschool-cv](https://github.com/Tolkynbayeva/rsschool-cv/tree/rsschool-cv-html)
+# [rsschool-cv](https://tolkynbayeva.github.io/rsschool-cv/cv)

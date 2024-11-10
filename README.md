@@ -1,0 +1,1 @@
+https://tolkynbayeva.github.io/rsschool-cv/cv

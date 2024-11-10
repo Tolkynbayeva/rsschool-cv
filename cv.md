@@ -33,3 +33,30 @@ I am highly motivated to learn, not just through formal training but also by tac
   * Figma
 
 ---
+
+## Code Examples:
+```
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer<Auth>(
+      builder: (context, auth, child) {
+        final router = Routes.router(auth.isAuthenticated);
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          title: 'Barma',
+          routerConfig: router,
+        );
+      },
+    );
+  }
+}
+```
+---
+
+## English Proficiency:
+- Regularly engage in reading technical documentation and watching educational videos in English.
+- Participated in projects involving communication with international teams.
+- Ongoing practice through English-language courses and self-study, focusing on technical vocabulary and practical application.

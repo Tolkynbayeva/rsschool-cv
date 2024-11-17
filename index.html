@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>CV - Tolkynbayeva Tolganay</title>
 </head>
 <body>
   <div class="container">
@@ -37,25 +37,25 @@
       <section class="code-examples">
           <h2>Code Examples</h2>
           <pre>
-              <code>
+<code>
 class MyApp extends StatelessWidget {
-const MyApp({super.key});
+  const MyApp({super.key});
 
-@override
-Widget build(BuildContext context) {
-  return Consumer<Auth>(
-    builder: (context, auth, child) {
-      final router = Routes.router(auth.isAuthenticated);
-      return MaterialApp.router(
-        debugShowCheckedModeBanner: false,
-        title: 'Barma',
-        routerConfig: router,
-      );
-    },
-  );
+  @override
+  Widget build(BuildContext context) {
+    return Consumer&lt;Auth&gt;(
+      builder: (context, auth, child) {
+        final router = Routes.router(auth.isAuthenticated);
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          title: 'Barma',
+          routerConfig: router,
+        );
+      },
+    );
+  }
 }
-}
-              </code>
+</code>
           </pre>
       </section>
 
@@ -65,5 +65,4 @@ Widget build(BuildContext context) {
       </section>
   </div>
 </body>
-
 </html>

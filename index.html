@@ -1,69 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CV - Tolkynbayeva Tolganay</title>
+  <meta charset="UTF-8">
+  <title>CV - Tolkynbayeva Tolganay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>CV - Tolkynbayeva Tolganay</h1>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#english-proficiency">English</a></li>
+          <li><a href="#contact-info">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <ul>
-                <li><strong>Email</strong>: <a href="mailto:workfortime37@gmail.com">workfortime37@gmail.com</a></li>
-                <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/tolganay-tolkynbayeva-4b0a69210/">LinkedIn Profile</a></li>
-                <li><strong>Telegram</strong>: @Tolkynbayeva</li>
-                <li><strong>GitHub</strong>: <a href="https://github.com/Tolkynbayeva?tab=overview&from=2024-01-01&to=2024-01-04">GitHub Profile</a></li>
-            </ul>
-        </section>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+        <h1>Tolkynbayeva Tolganay</h1>
+        <p>Flutter & Go Enthusiast</p>
+      </div>
+    </section>
 
-        <section class="summary">
-            <h2>Summary</h2>
-            <p>I am an aspiring developer with a strong passion for Flutter and Go development, aiming to become an expert in crafting high-quality applications. I am dedicated to continuous learning and always look for opportunities to improve my skills and contribute to the success of my team.</p>
-        </section>
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>
+        I am an aspiring developer with a strong passion for Flutter and Go development, aiming to become an expert in crafting high-quality applications. I am dedicated to continuous learning and always look for opportunities to improve my skills and contribute to the success of my team. My goal is to be part of a collaborative environment where I can share knowledge and gain new insights from colleagues.
+      </p>
+      <p>
+        I am highly motivated to learn, not just through formal training but also by tackling real-world challenges and finding solutions independently. I do not expect constant guidance but am always ready to ask questions and offer solutions. I take an active approach to problem-solving and value initiative in my work.
+      </p>
+    </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming Languages</strong>: Dart, Go, JavaScript</li>
-                <li><strong>Frameworks and Libraries</strong>: Flutter, Bloc (state management), Dio (HTTP client)</li>
-                <li><strong>Tools</strong>: Git, Docker, Postman, VS Code, Xcode, Figma</li>
-            </ul>
-        </section>
-
-        <section class="code-examples">
-            <h2>Code Examples</h2>
-            <pre>
-                <code>
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Consumer<Auth>(
-      builder: (context, auth, child) {
-        final router = Routes.router(auth.isAuthenticated);
-        return MaterialApp.router(
-          debugShowCheckedModeBanner: false,
-          title: 'Barma',
-          routerConfig: router,
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Dart, Go, JavaScript</li>
+        <li><strong>Frameworks:</strong> Flutter, Bloc, Dio</li>
+        <li><strong>Tools:</strong> Git, Docker, Postman, VS Code, Figma</li>
+      </ul>
+      <h2>Code Examples:</h2>
+      <pre>
+        <code>
+    class MyApp extends StatelessWidget {
+      const MyApp({super.key});
+    
+      @override
+      Widget build(BuildContext context) {
+        return Consumer(
+          builder: (context, auth, child) {
+            final router = Routes.router(auth.isAuthenticated);
+            return MaterialApp.router(
+              debugShowCheckedModeBanner: false,
+              title: 'Barma',
+              routerConfig: router,
+            );
+          },
         );
-      },
-    );
-  }
-}
-                </code>
-            </pre>
-        </section>
+      }
+    }
+        </code>
+      </pre>    
+    </section>
 
-        <section class="english-proficiency">
-            <h2>English Proficiency</h2>
-            <p>Regularly engage in reading technical documentation and watching educational videos in English. Participated in projects involving communication with international teams.</p>
-        </section>
-    </div>
+    <section id="projects">
+      <h2>Completed Projects</h2>
+      <ul>
+        <li><a href="https://github.com/Tolkynbayeva/quiz_app_flutter">Asample app using Flutter</a></li>
+        <li><a href="https://github.com/Tolkynbayeva/tetris-optimizer">Web app with Go backend</a></li>
+      </ul>
+    </section>
+
+    <section id="english-proficiency">
+      <h2>English Proficiency</h2>
+      <p>
+        Regularly engage with English resources such as technical documentation and videos. Experience in international project collaboration.
+      </p>
+    </section>
+
+
+    <section id="contact-info">
+      <h2>Contact Information</h2>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:workfortime37@gmail.com">workfortime37@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tolganay-tolkynbayeva-4b0a69210/">Profile</a></li>
+        <li><strong>Telegram:</strong> @Tolkynbayeva</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Tolkynbayeva">GitHub Profile</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/Tolkynbayeva?tab=overview&from=2024-01-01&to=2024-01-04">GitHub</a>
+    <p>&copy; 2024 Tolkynbayeva Tolganay</p>
+    <a class="footer-logo" href="https://rs.school/courses/javascript">
+      <img src="img/svg/rs-school-logo.svg" alt="logo rs scool">
+    </a>
+  </footer>
 </body>
 </html>
